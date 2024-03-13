@@ -9,3 +9,8 @@ This is version 3
 
 ## Topic
 1.variables
+
+
+## Note
+1. Branch is version path.
+2. Remote is github sever t store code.
