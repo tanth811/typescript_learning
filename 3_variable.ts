@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync'
 // var, let , const
 let หัวกระดอ = 1 
 console.log(หัวกระดอ)
@@ -25,11 +26,21 @@ console.log(`Sum of Weight: `+ (weight1+weight2));
 console.log(`Diff of Weight: `, (weight1-weight2));
 console.log(`Diff of Weight: `+ (weight1-weight2));
 
+
+
 //Question 1
-const height = 1.6; //kg
-const weight = 60; //centimeter
+const height = Number(readlineSync.question("Input height: "));
+const weight = Number(readlineSync.question("Input weight: "));
 const bmi = weight/(height*height)
 console.log(`BMI: ${bmi} Height: ${height} Weight: ${weight}`);
+
+if(bmi > 25 ){
+    console.log("You are Overweight.");
+}else if ( bmi >= 17 && bmi <25){
+    console.log("You are Average.");
+}else{
+    console.log("You are Thin");
+}
 
 //Qustion 2
 const celcius = 50;
